@@ -13,6 +13,8 @@
 
 @interface JTSActionSheetPresenter : NSObject
 
+@property (strong, nonatomic) UIViewController *rootViewController;
+
 + (instancetype)sharedInstance;
 
 - (void)presentSheet:(JTSActionSheet *)sheet fromView:(UIView *)view;
